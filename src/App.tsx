@@ -11,10 +11,6 @@ function App() {
         products.map((product) => <ProductCard product={product} key={product.sku} />)
       }
       </div>
-      <div
-        id="amzn-bwp-cart"
-        data-site-id="tds3sary6j"
-        data-widget-id="w-UA7MN8pHGj6YDHJqCGhQD1"></div>
     </>
   );
 }

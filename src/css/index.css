@@ -1,0 +1,59 @@
+.beard-prime {
+  max-width:1000px;
+  margin:0 auto;
+  display:grid;
+  justify-content: center;
+  justify-items:center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.beard-prime .product {
+  width:300px;
+  text-align: center;
+}
+
+.beard-prime .product-image {
+  width:100%;
+  height:250px;
+  overflow:hidden;
+  position:relative;
+}
+/* center image in container */
+.beard-prime .product-image img {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.beard-prime .product img {
+  width:100%;
+}
+
+.beard-prime .product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .beard-prime {
+    display:block;
+  }  
+  .beard-prime .product {
+    width:100%;
+    margin-bottom:2rem;
+  }
+  .beard-prime .product-image {
+    height:auto;
+  }
+  .beard-prime .product-image img {
+    position:relative;
+    top:0;
+    left:0;
+    transform:none;
+  }
+}
